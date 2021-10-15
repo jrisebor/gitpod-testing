@@ -6,8 +6,8 @@ tasks:
     init: pip install flask
     command: flask run
     env:
-      FLASK_ENV=development
-      FLASK_APP=testapp
+      FLASK_ENV: development
+      FLASK_APP: testapp
 
 
 # Ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
