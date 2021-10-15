@@ -1,0 +1,16 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - command: echo "Welcome to testapp!"
+  - name: Run Flask dev server
+    init: pip install flask
+    command: flask run
+    env:
+      FLASK_ENV=development
+      FLASK_APP=testapp
+
+
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 5000
+    onOpen: open-preview
