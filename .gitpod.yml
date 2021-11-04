@@ -8,6 +8,8 @@ tasks:
     env:
       FLASK_ENV: development
       # FLASK_APP: testapp
+  - name: Set up services
+    init: docker-compose up
 
 
 # Ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
